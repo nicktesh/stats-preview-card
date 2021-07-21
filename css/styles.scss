@@ -102,6 +102,10 @@ button {
       align-items: center;
       padding: 0 120px;
 
+      @media screen and (max-width: 1210px) {
+        padding: 0 40px;
+      }
+
       @media screen and (max-width: 992px) {
         flex-direction: column-reverse;
         padding: 0 20px;
@@ -117,6 +121,10 @@ button {
         height: 445px;
         max-height: 445px;
         border-radius: 10px 0 0 10px;
+
+        @media screen and (max-width: 1050px) {
+          padding: 0 40px;
+        }
 
         @media screen and (max-width: 992px) {
           width: 100%;
@@ -172,12 +180,14 @@ button {
             }
           }
 
-          h3 {
+          p {
             margin: 0 0 5px 0;
             font-size: 25px;
+            font-weight: 700;
+            color: $white;
           }
 
-          p {
+          h3 {
             color: rgba(255, 255, 255, 0.6);
             font-family: $secondary-font;
             letter-spacing: 1.2px;
